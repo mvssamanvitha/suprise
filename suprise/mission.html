@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff2f7">
+  <meta name="description" content="A secret Spider-Man-inspired mission, made just for you.">
+  <title>Spider-Man's Secret Mission</title>
+  <link rel="stylesheet" href="css/mission.css?v=2">
+  <script src="js/mission.js?v=3" defer></script>
+</head>
+<body class="mission-page">
+  <main class="mission-app">
+    <div class="mission-web mission-web--top" aria-hidden="true"></div>
+    <div class="mission-web mission-web--bottom" aria-hidden="true"></div>
+    <span class="mission-decoration mission-decoration--heart-one" aria-hidden="true">&#10084;</span>
+    <span class="mission-decoration mission-decoration--heart-two" aria-hidden="true">&#9829;</span>
+    <span class="mission-decoration mission-decoration--spark-one" aria-hidden="true">&#10022;</span>
+    <span class="mission-decoration mission-decoration--spark-two" aria-hidden="true">&#10022;</span>
+
+    <section class="experience-screen mission-intro" data-screen="mission-intro" aria-labelledby="mission-title">
+      <p class="mission-eyebrow">A top-secret delivery <span aria-hidden="true">&#10022;</span></p>
+      <h1 id="mission-title">PSSST… HEY, HANDSOME! <span aria-hidden="true">&#x1F577;&#xFE0F;&#x2764;&#xFE0F;</span></h1>
+      <p class="screen-copy">Spider-Man has a secret mission just for you, baby! <span aria-hidden="true">&#x1F6A8;&#x1F979;</span></p>
+
+      <div class="mission-card" aria-hidden="true">
+        <div class="mission-character">
+          <span class="mission-character-web"></span>
+          <span class="mission-character-head"><i></i><i></i></span>
+          <span class="mission-character-body"><b></b></span>
+          <span class="mission-character-arm mission-character-arm--left"></span>
+          <span class="mission-character-arm mission-character-arm--right"></span>
+          <span class="mission-character-leg mission-character-leg--left"></span>
+          <span class="mission-character-leg mission-character-leg--right"></span>
+        </div>
+        <div class="mission-folder">
+          <span class="folder-tab"></span>
+          <span class="folder-stamp">TOP<br>SECRET</span>
+          <span class="folder-web" aria-hidden="true"></span>
+          <span class="folder-seal" aria-hidden="true">&#10084;</span>
+          <span class="folder-flap"></span>
+        </div>
+      </div>
+      <button class="action-button accept-mission" type="button">Accept Mission <span aria-hidden="true">&#x1F578;&#xFE0F;</span></button>
+    </section>
+
+    <section class="experience-screen mission-reveal" data-screen="mission-reveal" aria-labelledby="reveal-title" hidden>
+      <p class="mission-eyebrow">Mission details <span aria-hidden="true">&#10022;</span></p>
+      <h2 id="reveal-title">YOUR SECRET MISSION <span aria-hidden="true">&#128140;</span></h2>
+      <div class="mission-briefing">
+        <p>Agent Abhiluuuuu, your mission is to unlock your girl's heart. <span aria-hidden="true">&#10084;&#65039;</span></p>
+        <p>But first, you must complete the next challenge. Are you ready, superhero?</p>
+      </div>
+      <button class="action-button continue-mission" type="button">Let's Do This! <span aria-hidden="true">&#x2764;&#xFE0F;&#x1F577;&#xFE0F;</span></button>
+    </section>
+
+    <section class="experience-screen unlock-welcome" data-screen="unlock-welcome" aria-labelledby="unlock-title" hidden>
+      <p class="mission-eyebrow">One little challenge <span aria-hidden="true">&#10022;</span></p>
+      <h2 id="unlock-title">Unlock My Heart,<br><span>My Handsome!</span> <span aria-hidden="true">&#x2764;&#xFE0F;&#x1F510;</span></h2>
+      <p class="screen-copy">Baby, there's one little challenge waiting for you! Put the pieces together to unlock my heart. <span aria-hidden="true">&#x1F979;&#x2764;&#xFE0F;</span></p>
+      <div class="locked-heart" aria-hidden="true">
+        <span class="locked-heart-symbol">&#10084;</span>
+        <span class="heart-web-lines"></span>
+        <span class="heart-lock-shackle"></span>
+        <span class="heart-lock-body"><i></i></span>
+      </div>
+      <button class="action-button start-challenge" type="button">Start the Challenge <span aria-hidden="true">&#129513;</span></button>
+    </section>
+
+    <section class="experience-screen puzzle-screen" data-screen="puzzle" aria-labelledby="puzzle-title" hidden>
+      <p class="mission-eyebrow">Your heart is waiting <span aria-hidden="true">&#10022;</span></p>
+      <h2 id="puzzle-title">Put the pieces together <span aria-hidden="true">&#10084;</span></h2>
+      <p class="puzzle-instruction">Tap one piece, then tap the place you want to move it.</p>
+      <div class="puzzle-layout">
+        <div class="puzzle-board" role="group" aria-label="Three by three photo puzzle"></div>
+        <aside class="puzzle-side">
+          <div class="puzzle-heart-lock" aria-hidden="true">
+            <span class="side-heart-symbol">&#10084;</span>
+            <span class="side-lock-shackle"></span>
+            <span class="side-lock-body"></span>
+          </div>
+          <p class="puzzle-photo-note"></p>
+          <p class="puzzle-status" role="status" aria-live="polite">Your heart is still locked. Find the right order.</p>
+          <button class="action-button restart-puzzle" type="button">Restart Puzzle <span aria-hidden="true">&#8635;</span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="experience-screen mission-complete" data-screen="mission-complete" aria-labelledby="complete-title" hidden>
+      <div class="unlocked-heart" aria-hidden="true">
+        <span class="unlocked-heart-symbol">&#10084;</span>
+        <span class="unlock-spark unlock-spark--one">&#10022;</span>
+        <span class="unlock-spark unlock-spark--two">&#10022;</span>
+        <span class="unlock-heart-float unlock-heart-float--one">&#10084;</span>
+        <span class="unlock-heart-float unlock-heart-float--two">&#9829;</span>
+      </div>
+      <h2 id="complete-title">YAYYYY! YOU UNLOCKED MY HEART! <span aria-hidden="true">&#x2764;&#xFE0F;&#x1F979;&#x1FAC2;</span></h2>
+      <p class="completion-copy">You found all the pieces, baby. And just like this puzzle, you have a special place in my heart. I love youuuu! <span aria-hidden="true">&#10084;&#65039;</span></p>
+      <figure class="completed-photo">
+        <img class="reconstructed-photo" alt="Your completed heart puzzle" hidden>
+        <div class="reconstructed-placeholder" role="status" hidden></div>
+      </figure>
+      <a class="action-button final-hug-link" href="hug.html">Tight Hug <span aria-hidden="true">&#x1FAC2;&#x2764;&#xFE0F;</span></a>
+    </section>
+  </main>
+</body>
+</html>

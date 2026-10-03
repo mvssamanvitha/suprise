@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff2f7">
+  <meta name="description" content="Welcome to our little world.">
+  <title>Our Little World</title>
+  <link rel="stylesheet" href="css/style.css?v=our-world-3">
+  <script src="js/script.js?v=our-world-5" defer></script>
+</head>
+<body class="our-world-page">
+  <main class="world-main">
+    <div class="world-web world-web--left" aria-hidden="true"></div>
+    <div class="world-web world-web--right" aria-hidden="true"></div>
+    <span class="world-decoration world-decoration--heart-one" aria-hidden="true">&#10084;</span>
+    <span class="world-decoration world-decoration--heart-two" aria-hidden="true">&#9829;</span>
+    <span class="world-decoration world-decoration--spark-one" aria-hidden="true">&#10022;</span>
+    <span class="world-decoration world-decoration--spark-two" aria-hidden="true">&#10022;</span>
+
+    <section class="world-welcome" aria-labelledby="world-title">
+      <p class="world-eyebrow"><span aria-hidden="true">&#10022;</span> Just for you <span aria-hidden="true">&#10022;</span></p>
+      <h1 id="world-title">Welcome to our little world,<br><span>my handsome</span> <span class="world-title-heart" aria-hidden="true">&#10084;&#65039;</span></h1>
+      <button class="world-heart-button" type="button" aria-label="Tap my heart to see our photos">
+        <span aria-hidden="true">&#10084;&#65039;</span>
+      </button>
+      <p class="world-heart-hint">Tap my heart, baby <span aria-hidden="true">&#128150;</span></p>
+    </section>
+
+    <section class="photo-viewer" aria-labelledby="photos-title" aria-live="polite" hidden>
+      <h2 class="visually-hidden" id="photos-title">Our photos</h2>
+      <div class="photo-layout">
+        <figure class="photo-figure" aria-describedby="photo-caption">
+          <div class="photo-frame">
+            <img class="memory-photo" alt="" hidden>
+            <div class="photo-placeholder" role="status">Your photo will appear here &#10084;</div>
+          </div>
+        </figure>
+        <div class="photo-details">
+          <p class="photo-caption" id="photo-caption"></p>
+          <p class="photo-ending" hidden>That's our little world, and I love it here. <span aria-hidden="true">&#10084;&#65039;</span></p>
+          <div class="photo-controls">
+            <button class="previous-photo-button" type="button" hidden>Previous <span aria-hidden="true">&#128150;</span></button>
+            <button class="next-photo-button" type="button">Next <span aria-hidden="true">&#10084;</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
